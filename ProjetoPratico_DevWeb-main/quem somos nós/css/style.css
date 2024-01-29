@@ -1,0 +1,454 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS',  sans-serif;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.76);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo, .imglink{
+    
+    width: 200px;
+    height: 54px;
+    display: flex;
+    justify-content: left;
+    margin-right: 250px;
+    margin-left: 30px;
+}
+
+ul {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color:rgba(0, 0, 0, 0.76);
+}
+
+a:hover {
+    background-color:rgb(234, 233, 233);
+}
+
+.login{
+        padding: 0.5rem 1rem;
+        background-color: rgba(40, 108, 130, 1);
+        color: whitesmoke;
+        border-color: rgba(40, 108, 130, 1);
+        margin-left: 5rem;
+        margin-right: 3rem;
+        border-radius: 13px;
+}
+.login:hover {
+    background-color:rgba(205, 234, 255, 1);
+}
+
+.imgback{
+    background:url(/img/fundo1QS.jpg) no-repeat;
+    width: 100%;
+    height: 720px;
+    background-size: cover;
+  background-position: center;
+  margin-top: 70px;
+  position: relative; 
+}
+
+ h1{
+    color: rgb(241, 241, 241);
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    font-size: 40px;
+    padding: 0 0 0 5rem;
+
+
+}
+
+.text1 {
+    font-size: 18px;
+    text-indent: 2rem;
+    justify-content: flex-start;
+    width: 621px;
+    height: 277px;
+    margin-top: 6rem;
+    position: absolute;
+    margin-left: 2rem;
+    align-items: center;
+}
+
+.imgback2{
+ background: url(/img/italia1.jpg) no-repeat;
+ width: 500px;
+ height: 300px;
+ background-size: cover;
+ position: relative;
+float: right;
+background-position: center;
+margin-top: 3rem;
+border-radius: 30px;
+margin-right: 2rem;
+align-items: center;
+
+}
+
+.boxcolor{
+    background: rgba(40, 108, 130, 1);
+    width: 1199px;
+    height: 415px;
+    margin-top: 25rem;
+    margin-left: 2rem;
+    margin-right: 2rem; 
+    display: flex;
+    position: relative;
+    border-radius: 30px;
+   
+}
+
+.textbox{
+    width: 800px;
+    height: 400px;
+    text-indent: 2rem;
+    font-size: 18px;
+    color: whitesmoke;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    align-items: center;
+    position: relative;
+    display: block;
+    margin-top: 7rem;
+}
+
+.imgback3{
+    background: url(/img/vista-vertical-na-torre-eiffel-paris-franca_1258-3169.jpg)no-repeat;
+    width: 259px;
+    height: 384px;
+    background-size: cover;
+    display: flex;
+    margin-top: 1rem;
+    margin-right: 4rem;
+    border-radius: 30px;
+} 
+.imgback4{
+    background: url(/img/tokio1.jpg)no-repeat;
+    width: 443px;
+    height: 280px;
+    margin-left: 2rem;
+    margin-top: 4rem;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 443px;
+   grid-gap: 2rem;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.hero{
+    background: blue;
+    position: relative;
+}
+.imgback4{
+    background: url(/img/tokio1.jpg)no-repeat;
+    width: 443px;
+    height: 280px;
+    margin-left: 2rem;
+    margin-top: 4rem;
+    background-size: cover;
+    border-radius: 30px;
+    position: absolute;
+}
+
+
+.text3 {
+    width: 733px;
+    height: 308px;
+    text-indent: 2rem;
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+    margin-top: 6.5rem;
+    margin-right: 2rem;
+  }
+
+  .bannerend{
+    background: url(/img/canada.jpg)no-repeat;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 25rem;
+    position: relative;
+  }
+
+  .text4{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    width: 510px;
+    height: 151px;
+    margin-left: 24rem;
+    align-items: center;
+    text-align: center;
+    display: flex;
+  }
+
+  .buttondown{
+    width: 120px;
+    height: 47px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(40, 108, 130, 1);
+    border-radius: 15px;
+    color: whitesmoke;
+    text-align: center;
+    display: flex;
+    margin-left: 36rem;
+  }
+
+  .buttondown:hover {
+    background-color:rgba(205, 234, 255, 1);
+}
+
+.rightsreserved{
+    padding-left: 53px;
+    padding-top: 168px;
+    color: #FFF;
+    text-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+    font-size: 15px;
+}
+
+/* login icon */
+
+.contentlogin{
+    display: flex;
+    padding: 5px;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    margin: 20px;
+}
+
+.logoimglogin{
+    margin-bottom: 30px;
+}
+
+.closelogin{
+    font-size: 30px;
+    color: #0019FF;
+    float: right;
+    width: 24px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 50px;
+}
+
+.closelogin:hover{
+    background-color: rgba(80, 98, 255, 0.5);
+}
+
+.modal0{
+    position: fixed;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+}
+
+.modal-content0{
+    color: #FFF;
+    font-size: 15px;
+    background-color: #FFF;
+    padding: 16px 30px;
+    width: 500px;
+    height: 550px;
+    border-radius: 1rem;
+}
+
+.show-modal0{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+.inputs{
+    width: 293px;
+    height: 40px;
+    border-radius: 50px;
+    background: #A4D9FF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+    border: none;
+    margin-top: 10px;
+    margin-left: 45px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+.title{
+    margin-left: 45px;
+}
+
+.loginbutton{
+    color: #FFF;
+    width: 102px;
+    height: 35px;
+    border-radius: 50px;
+    background: #0019FF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.40);
+    margin-left: 130px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.bkglogin{
+    width: 376px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: #121D83;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+    height: 310px;
+    padding-top: 20px;
+}
+
+input[type="email"]::placeholder {
+    color: #FFF;
+}
+
+input[type="password"]::placeholder {
+    color: #FFF;
+}
+
+.forgot{
+    font-size: 12px;
+    margin-left: 50px;
+    text-decoration: underline;
+}
+
+header button{
+    display: block;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+/* finish login icon */
+
+/* rodapé */
+
+footer{
+    display: flex;
+    margin-top: 70px;
+    width: 100%;
+    height: 217px;
+    border-radius: 50px 50px 0px 0px;
+    background: #121D83;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25);
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.rodapelogo{
+    display: flex;
+    width: 300.787px;
+    height: 75px;
+    flex-shrink: 0;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+footer p{
+    color: #FFF;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 15px;
+    text-align: left;
+    margin: 3%;
+}
+
+.socialmedia{
+    text-align: center;
+    color: #FFF;
+    text-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.30);
+    font-size: 16px;    
+    display: flex;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    margin-right: 10px;
+    display: flex;
+    vertical-align: middle;
+    text-align: center;
+    margin-top: 2rem;
+}
+  
+.txtt{
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+
+.botao44{
+    width: 120px;
+    height: 20px;
+    background: #A4D9FF;
+    color: #121D83;
+    border-radius: 50px;
+    border: none;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+
+}
+
+.rodape-links-vertical{
+    color: white;
+    justify-content: flex-end;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+
+

@@ -1,0 +1,897 @@
+* {
+    font-family: 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+header{
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+    z-index: 2;
+}
+
+header .logoimage{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.menu li{
+    color: white;
+    display: inline-block;
+} 
+
+.menu a:hover{
+    color: white;
+}
+
+.menu a:visited {
+    color: white;
+}
+
+.menu a:link{
+    color: white;
+}
+
+nav img{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+header button{
+    display: block;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+/* login icon */
+
+.contentlogin{
+    display: flex;
+    padding: 5px;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    margin: 20px;
+}
+
+.logoimglogin{
+    margin-bottom: 30px;
+}
+
+.closelogin{
+    font-size: 30px;
+    color: #0019FF;
+    float: right;
+    width: 24px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 50px;
+}
+
+.closelogin:hover{
+    background-color: rgba(80, 98, 255, 0.5);
+}
+
+.modal0{
+    position: fixed;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+}
+
+.modal-content0{
+    color: #FFF;
+    font-size: 15px;
+    background-color: #FFF;
+    padding: 16px 30px;
+    width: 500px;
+    height: 550px;
+    border-radius: 1rem;
+}
+
+.show-modal0{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+.inputs{
+    width: 293px;
+    height: 40px;
+    border-radius: 50px;
+    background: #A4D9FF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+    border: none;
+    margin-top: 10px;
+    margin-left: 45px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+
+.title{
+    margin-left: 45px;
+}
+
+.loginbutton{
+    color: #FFF;
+    width: 102px;
+    height: 35px;
+    border-radius: 50px;
+    background: #0019FF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.40);
+    margin-left: 130px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.bkglogin{
+    width: 376px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: #121D83;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+    height: 310px;
+    padding-top: 20px;
+}
+
+input[type="email"]::placeholder {
+    color: #FFF;
+}
+
+input[type="password"]::placeholder {
+    color: #FFF;
+}
+
+.forgot{
+    font-size: 12px;
+    margin-left: 50px;
+    text-decoration: underline;
+}
+
+/* finish login icon */
+
+.container{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    animation: animate 8s ease-in-out infinite;
+    background-size: cover;
+    z-index: 1;
+}
+
+.outer{
+    position:absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100vh;
+}
+
+.details{
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    padding-top: 300px;
+}
+
+@keyframes animate{
+    0%,100%{
+        background-image: url(./assets/images/praia.png);
+    }
+    25%{
+        background-image: url(./assets/images/borealis.png);
+    }
+    50%{
+        background-image: url(./assets/images/ny.png);
+    }
+}
+
+.details h1 {
+    font-size: 70px;
+    color: white;
+    padding-bottom: 49px;
+}
+
+.details h3 {
+    color: #191970;
+    font-size: 33px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"]::placeholder {
+    color: rgba(72, 91, 255, 0.70);
+  }
+
+.pin{
+    display: inline-block;
+    background-color: #FFF;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button[type="submit"]{
+    display: inline-block;
+    background-color: #FFF;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.input-container{
+    width: 50%;
+    color:rgba(72, 91, 255, 0.70);
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    overflow: hidden;
+    margin-right: 10px;
+    background-color: #FFF;
+    box-shadow: box-shadow 0px 0px 10px 0px #0019FF;
+}
+
+input[type="text"]{
+    font-size: 21px;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: transparent;
+}
+
+.botaocabecalho{
+    position: fixed;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border-color: grey;
+    background-color: lightgray;
+    margin-left: 1480px;
+    margin-top: 750px;
+    cursor: pointer;
+}
+
+.message {
+    font-size: 44.77px;
+    text-align: center;
+    background-color: #85B0BD;
+    color: white;
+    padding-left: 170px;
+    padding-right: 170px;
+    padding-top: 73px;
+    padding-bottom: 73px;
+}
+
+.cards h2 {
+    margin: 0%;
+    color: #3CA6C8;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 59px;
+    padding-left: 416px;
+    padding-right: 416px;
+    padding-bottom: 0px;
+}
+
+.cards h3 {
+    margin: 0%;
+    font-size: 44.77px;
+    color: #3CA6C8;
+    text-align: center;
+    padding-left: 170px;
+    padding-right: 170px;
+    padding-top: 0px;
+    padding-bottom: 73px;
+}
+
+.cards p {
+    margin: 0px;
+    font-size: 30px;
+    color: #535353;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.cards li{
+    margin: 0px;
+}
+
+.cards ul button{
+    display: block;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: #FFF;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+/* as especificações do .modal é da caixa do modal */
+.modal{
+    position: fixed;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* fundo cinza atrás da modal(quando ativada): */
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    /* deixa a transição mais suave: */
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+}
+
+/* as especificações .modal-content é do conteúdo que vai dentro do modal */
+.modal-content{
+    font-size: 15px;
+    background-image: url(./assets/images/coréia.png);
+    /* os 16px dão margem interior em cima e embaixo, e os 24px nas laterais: */
+    padding: 16px 24px;
+    width: 749.91px;
+    height: 500px;
+    border-radius: 1rem;
+}
+
+/* botão de fechar: */
+span{
+    float: right;
+    width: 24px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 50px;
+}
+
+span:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.show-modal{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+/* ITÁLIA - 1 */
+
+.modal1{
+    position: fixed;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+}
+
+.modal-content1{
+    font-size: 15px;
+    background-image: url(./assets/images/italia.png);
+    padding: 16px 30px;
+    width: 749.91px;
+    height: 500px;
+    border-radius: 1rem;
+}
+
+.show-modal1{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+/* NORUEGA - 2 */
+.modal2{
+    position: fixed;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+}
+
+.modal-content2{
+    font-size: 15px;
+    background-image: url(./assets/images/noruega.png);
+    padding: 16px 30px;
+    width: 749.91px;
+    height: 500px;
+    border-radius: 1rem;
+}
+
+.show-modal2{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+/* GRÉCIA - 3 */
+.modal3{
+    position: fixed;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+}
+
+.modal-content3{
+    font-size: 15px;
+    background-image: url(./assets/images/grécia.png);
+    padding: 16px 30px;
+    width: 749.91px;
+    height: 500px;
+    border-radius: 1rem;
+}
+
+.show-modal3{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+/* EGITO - 4 */
+.modal4{
+    position: fixed;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+}
+
+.modal-content4{
+    font-size: 15px;
+    background-image: url(./assets/images/egito.png);
+    padding: 16px 30px;
+    width: 749.91px;
+    height: 500px;
+    border-radius: 1rem;
+}
+
+.show-modal4{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+/* HOLANDA - 5 */
+.modal5{
+    position: fixed;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+}
+
+.modal-content5{
+    font-size: 15px;
+    background-image: url(./assets/images/holanda.png);
+    padding: 16px 30px;
+    width: 749.91px;
+    height: 500px;
+    border-radius: 1rem;
+}
+
+.show-modal5{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+/* JAPÃO - 6 */
+.modal6{
+    position: fixed;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+}
+
+.modal-content6{
+    font-size: 15px;
+    background-image: url(./assets/images/japão.png);
+    padding: 16px 30px;
+    width: 749.91px;
+    height: 500px;
+    border-radius: 1rem;
+}
+
+.show-modal6{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+/* FRANÇA - 7 */
+.modal7{
+    position: fixed;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+}
+
+.modal-content7{
+    font-size: 15px;
+    background-image: url(./assets/images/frança.png);
+    padding: 16px 30px;
+    width: 749.91px;
+    height: 500px;
+    border-radius: 1rem;
+}
+
+.show-modal7{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+/* AUSTRÁLIA - 8 */
+.modal8{
+    position: fixed;
+    padding: 0px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.25s ease-in-out, transform 0.25s ease-in-out, opacity 0.25s ease-in-out; 
+}
+
+.modal-content8{
+    font-size: 15px;
+    background-image: url(./assets/images/austrália.png);
+    padding: 16px 30px;
+    width: 749.91px;
+    height: 500px;
+    border-radius: 1rem;
+}
+
+.show-modal8{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+}
+
+/* FINISH CARDS CONTENT*/
+
+.firstline{
+    display: flex;
+    justify-content: space-around;
+}
+
+.secondline{
+    display: flex;
+    justify-content: space-around;
+}
+
+.thirdline{
+    display: flex;
+    justify-content: space-around;
+}
+
+.depoimentos{
+    font-size: 44.77px;
+    text-align: center;
+    background-color: #85B0BD;
+    color: white;
+    padding-left: 170px;
+    padding-right: 170px;
+    padding-top: 73px;
+    padding-bottom: 600px;
+}
+
+.line{
+    color: #D6FFFF;
+    font-size: 60px;
+}
+
+.description{
+    color: #CDEAFF;
+    text-align: center;
+    font-size: 30px;
+    font-family: Trebuchet MS;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    padding-top: 20px;
+}
+
+.jimin {
+    display: flex;
+    align-items: center;
+    background-image: url(./assets/images/jimin\ thing.png);
+    background-position: center;
+    width: 870px;
+    height: 587.6px;
+    flex-shrink: 0;
+    align-self: center;
+    justify-content: center;
+    margin-left: 20rem;
+    margin-top: 3rem;
+}
+
+.jimin input{
+    color: #121D83;
+    font-size: 38px;
+    margin-top: 110px;
+    margin-left: 300px;
+    width: 275px;
+    height: 61.713px;
+    border-radius: 50px;
+    background-color: #A4D9FF;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.5);
+}
+
+.jimin button:hover{
+    background-color: rgba(24, 170, 255, 0.26);
+}
+
+/* rodapé */
+
+footer{
+    display: flex;
+    margin-top: 70px;
+    width: 100%;
+    height: 217px;
+    border-radius: 50px 50px 0px 0px;
+    background: #121D83;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25);
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.rodapelogo{
+    display: flex;
+    width: 300.787px;
+    height: 75px;
+    flex-shrink: 0;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+footer p{
+    color: #FFF;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 15px;
+    text-align: left;
+    margin: 3%;
+}
+
+.socialmedia{
+    text-align: center;
+    color: #FFF;
+    text-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.30);
+    font-size: 16px;    
+    display: flex;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    align-items: center;
+    gap: 4rem;
+    margin-right: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.socialmedia {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+  }
+  
+  .socialmedia ul {
+    list-style: none; /* Remove as bolinhas dos itens da lista */
+    padding: 0; /* Remove o espaçamento interno da lista */
+    margin: 0; /* Remove o espaçamento externo da lista */
+  }
+  
+  .socialmedia ul li {
+    display: inline-block; /* Faz com que os itens fiquem em linha */
+    vertical-align: middle; /* Centraliza verticalmente */
+  }
+  
+  .socialmedia ul li p {
+    margin: 0; /* Remove o espaçamento do parágrafo */
+  }
+  
+  .socialmedia ul li a {
+    display: inline-block; /* Faz com que as âncoras fiquem em linha */
+    margin: 0 10px; /* Adiciona espaçamento entre os ícones (ajuste conforme necessário) */
+    margin-top: 2rem; /* mover os ícones para baixo*/
+  }
+
+.links{
+    color: white;
+    display: inline-block;
+    text-align: justify;
+    margin: 0;
+}
+
+.links a:hover{
+    color: #FFF;
+}
+
+.links a:visited{
+    color:#FFF;
+}
+
+.links2 a:link{
+    color: #FFF;
+}
+
+.links2 li{
+    color: #FFF;
+}
+
+.links2{
+    height: 20px;
+    width: 10px;
+    color: white;
+    display: inline-block;
+    text-align: justify;
+    margin: 1%;
+}
+
+.links2 a:hover{
+    color: #FFF;
+}
+
+.links2 a:visited{
+    color:#FFF;
+}
+
+.botao{
+    width: 120px;
+    height: 20px;
+    background: #A4D9FF;
+    color: #121D83;
+    border-radius: 50px;
+    border: none;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    margin-left: -4rem;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    float: left;
+    margin-top: 9rem;
+    margin-right: 8rem;
+}
+
+.links a:link{
+    color: #FFF;
+}
+
+.links li{
+    color: white;
+    display: inline-block;
+} 
+
+.links a:hover{
+    color: white;
+}
+
+.links a:visited {
+    color: white;
+}
